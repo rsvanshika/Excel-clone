@@ -46,11 +46,11 @@ for (let row = 1; row <= 100; row++) {
 }
  //bold button
  boldbutton.addEventListener("click",()=>{
-    if(currentCell.style.fontweight=="bold"){
-        currentCell.style.fontweight="normal";
+    if(currentCell.style.fontWeight=="bold"){
+        currentCell.style.fontWeight="normal";
     }
     else
-    currentCell.style.fontweight="bold";
+    currentCell.style.fontWeight="bold";
   })
    //italics button
    italicsbutton.addEventListener("click",()=>{
@@ -59,6 +59,15 @@ for (let row = 1; row <= 100; row++) {
     }
     else
     currentCell.style.fontStyle="italic";
+  })
+
+   //underline button
+   underlinebutton.addEventListener("click",()=>{
+    if(currentCell.style.textDecoration=="underline"){
+        currentCell.style.textDecoration="none";
+    }
+    else
+    currentCell.style.textDecoration="underline";
   })
 
 
